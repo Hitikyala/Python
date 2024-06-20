@@ -6,9 +6,11 @@ services:
       - "5000:5000"
     depends_on:
       - redis
+      networks:
+      -webnet
     restart: always
   redis:
-    image: redis
+    image: "redis:alpine"
     restart: always
 
 
