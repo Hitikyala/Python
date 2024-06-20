@@ -10,7 +10,7 @@ services:
       -webnet
     restart: always
   redis:
-    image: "redis:alpine"
+    image: redis
     restart: always
 
 
